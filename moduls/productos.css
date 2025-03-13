@@ -1,0 +1,68 @@
+#root{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Estilo para el contenedor del producto */
+.producto {
+  max-width: 300px;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para el contenedor */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para la imagen del producto */
+.producto-imagen {
+  width: 100%;
+  height: auto;
+  max-height: 185px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para el nombre del producto */
+.producto-nombre {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Estilo para el precio del producto */
+.producto-precio {
+  font-size: 1.2em;
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Estilo para la descripción del producto */
+.producto-descripcion {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilo para los contenedores en caso de que haya más de un producto */
+.producto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
